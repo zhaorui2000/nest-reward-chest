@@ -1,0 +1,19 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0  
+Date: Oct 14, 2025  
+
+Features:
+  - Automatically drops a reward chest after eliminating nests  
+  - Reward chests contain cliff explosives  
+  - Grants science packs based on technology level (average of 3 packs per nest)  
+  - Science pack rewards dynamically adjust according to the player's research progress  
+
+Changes:
+  - Initial release  
+
+Bugfixes:
+  - None  
+
+Compatibility:
+  - Compatible with Factorio 2.0  
+  - Requires base game version >= 2.0

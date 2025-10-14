@@ -1,0 +1,11 @@
+{
+  "name": "nest-reward-chest",
+  "version": "0.1.0",
+  "title": "Nest Reward Chest",
+  "author": "ZhaoRui",
+  "contact": "https://github.com/zhaorui2000/nest-reward-chest/issues",
+  "homepage": "https://github.com/zhaorui2000/nest-reward-chest",
+  "description": "Automatically drops a reward chest after destroying enemy nests, containing cliff explosives and science packs based on technology level.",
+  "factorio_version": "2.0",
+  "dependencies": ["base >= 2.0"]
+}
