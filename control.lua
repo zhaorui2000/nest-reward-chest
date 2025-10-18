@@ -72,12 +72,25 @@ end
 -- 主事件处理函数
 script.on_event(defines.events.on_entity_died, function(event)
   if is_enemy_spawner(event.entity.name) then
-    if math.random(10) <= 1 then
+    -- 获取设置值
+    local drop_rate = settings.global["nest-reward-chest-drop-rate"].value
+    local cliff_explosives_count = settings.global["nest-reward-chest-cliff-explosives-count"].value
+    local science_pack_count = settings.global["nest-reward-chest-science-pack-count"].value
+    
+    -- 根据设置的概率决定是否生成奖励箱子
+    if math.random(100) <= drop_rate then
       local reward_chest = create_reward_chest(event.entity.surface, event.entity.position)
       if reward_chest then
-        insert_items(reward_chest, { ["cliff-explosives"] = 3 })
+        -- 使用设置的悬崖炸药数量
+        if cliff_explosives_count > 0 then
+          insert_items(reward_chest, { ["cliff-explosives"] = cliff_explosives_count })
+        end
+        
+        -- 使用设置的科技包数量
+        if science_pack_count > 0 then
+          add_tech_reward(reward_chest, science_pack_count)
+        end
       end
-      add_tech_reward(reward_chest, 10)
     end
   end
 end)
