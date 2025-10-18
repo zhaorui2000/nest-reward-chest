@@ -71,12 +71,13 @@ end
 
 -- 主事件处理函数
 script.on_event(defines.events.on_entity_died, function(event)
-  -- 检查死亡的实体是否是虫巢或虫族生成器
   if is_enemy_spawner(event.entity.name) then
-    local reward_chest = create_reward_chest(event.entity.surface, event.entity.position)
-    if reward_chest then
-      insert_items(reward_chest, { ["cliff-explosives"] = 1.5 })
+    if math.random(10) <= 1 then
+      local reward_chest = create_reward_chest(event.entity.surface, event.entity.position)
+      if reward_chest then
+        insert_items(reward_chest, { ["cliff-explosives"] = 3 })
+      end
+      add_tech_reward(reward_chest, 10)
     end
-    add_tech_reward(reward_chest, 3)
   end
 end)
