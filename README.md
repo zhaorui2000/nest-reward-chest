@@ -2,15 +2,22 @@
 
 [中文版本](README_zh.md) | English Version
 
-A mod that automatically drops a chest after destroying enemy nests, containing cliff explosives and science packs rewarded based on technology level (3 bottles per nest).
+A mod that automatically drops a chest after destroying enemy nests, containing cliff explosives and science packs rewarded based on technology level.
+
+## Demo
+
+![Demo GIF](nest-reward-demo.gif)
 
 ## Features
 
 - Automatically generates a reward chest at the location of destroyed enemy nests or spawners
 - The reward chest contains:
-  - Cliff explosives
-  - Science packs rewarded based on current technology level (3 bottles per nest)
+  - Cliff explosives (configurable quantity)
+  - Science packs rewarded based on current technology level (configurable quantity)
 - Science pack rewards automatically adjust according to player's technology progress, ensuring rewards remain useful
+- Configurable drop rate for reward chests
+- Optional auto-research technology to enable the reward system
+- Technology visibility can be toggled in settings
 
 ## Compatibility
 
@@ -25,10 +32,14 @@ A mod that automatically drops a chest after destroying enemy nests, containing 
 
 ## Configuration
 
-Currently, this mod has no configurable options, but future plans include:
-- Configure the type and quantity of reward items
-- Configure the spawn probability of reward chests
-- Configure the probability of additional rewards
+This mod offers the following configurable options:
+
+### Mod Settings
+
+- **Auto-research technology**: Enable/disable automatic research of the nest reward technology
+- **Drop rate**: Probability (1-100) of a reward chest spawning when an enemy nest is destroyed
+- **Cliff explosives count**: Number of cliff explosives to include in each reward chest
+- **Science pack count**: Number of science packs to include in each reward chest
 
 ## Version History
 
@@ -42,6 +53,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Bug reports and feature requests are welcome!
 
-## Author
-
-YourName
