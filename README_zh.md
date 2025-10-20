@@ -1,12 +1,12 @@
 # 虫巢奖励箱
 
-中文版本 | [English Version](README.md)
+中文版本 | [English](README.md)
 
 消灭虫巢后自动掉落一个箱子，里面包含炸崖炸药和根据科技水平奖励的科学研究包。
 
 ## 演示
 
-![演示 GIF](nest-reward-demo.gif)
+![演示 GIF](./nest-reward-demo.gif)
 
 ## 功能
 

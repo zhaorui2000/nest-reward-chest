@@ -106,7 +106,7 @@ script.on_event(defines.events.on_entity_died, function(event)
     -- 如果科技未研究且启用了自动研究，则研究科技
     if tech and not tech.researched and auto_research then
       tech.researched = true
-      game.print("[technology=nest-reward-tech]")
+      game.print({"message.nest-reward-tech-completed"})
     end
     
     -- 如果科技已研究，则根据概率生成奖励箱子
