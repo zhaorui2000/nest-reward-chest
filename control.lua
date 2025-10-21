@@ -17,6 +17,7 @@ end
 -- 当游戏加载时更新科技可见性
 script.on_load(function()
   if game then
+    random.set_seed(game.map_gen_settings.seed)
     update_tech_visibility()
   end
 end)
