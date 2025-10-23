@@ -30,7 +30,7 @@ data:extend({
     type = "int-setting",
     name = "nest-reward-chest-cliff-explosives-count",
     setting_type = "runtime-global",
-    default_value = 3,
+    default_value = 10,
     minimum_value = 0,
     maximum_value = 50,
     order = "c"
