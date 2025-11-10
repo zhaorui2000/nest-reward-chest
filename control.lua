@@ -46,7 +46,7 @@ end
 -- 工具函数：创建奖励箱子
 local function create_reward_chest(surface, position)
   local reward_chest = surface.create_entity {
-    name = "wooden-chest",
+    name = "crash-site-spaceship-wreck-big-2",
     position = position,
     force = "player"
   }
