@@ -100,17 +100,17 @@ script.on_event(defines.events.on_entity_died, function(event)
     local science_pack_count = settings.global["nest-reward-chest-science-pack-count"].value
     local auto_research = settings.global["nest-reward-tech-auto-research"].value
     
-    -- 检查和研究科技
+    -- 检查和研究虫巢奖励
     local player_force = game.forces["player"]
     local tech = player_force.technologies["nest-reward-tech"]
     
-    -- 如果科技未研究且启用了自动研究，则研究科技
+    -- 如果虫巢奖励未研究且启用了自动研究，则研究虫巢奖励
     if tech and not tech.researched and auto_research then
       tech.researched = true
       game.print({"message.nest-reward-tech-completed"})
     end
     
-    -- 如果科技已研究，则根据概率生成奖励箱子
+    -- 如果虫巢奖励已研究，则根据概率生成奖励箱子
     if tech and tech.researched then
       if math.random(100) <= drop_rate then
         local reward_chest = create_reward_chest(event.entity.surface, event.entity.position)

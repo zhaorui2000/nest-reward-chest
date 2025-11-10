@@ -1,6 +1,6 @@
 -- 设置阶段：处理mod的配置选项
 
--- 科技研究触发设置
+-- 虫巢奖励触发设置
 data:extend({
   {
     type = "bool-setting",
