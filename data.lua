@@ -5,12 +5,12 @@ data:extend({
   {
     type = "technology",
     name = "nest-reward-tech",
-    icon = "__nest-reward-chest__/graphics/nest-reward-icon.png",
+    icon = "__nest-reward__/graphics/nest-reward-icon.png",
     icon_size = 512,
     enabled = true,
     research_trigger = {
       type = "scripted",
-      trigger_description = {"technology-trigger-description.nest-reward-tech-trigger"}
+      trigger_description = { "technology-trigger-description.nest-reward-tech-trigger" }
     },
     order = "a-a-a"
   }
